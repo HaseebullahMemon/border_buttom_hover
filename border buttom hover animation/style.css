@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+}
+.center ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.center ul li{
+    color: #fff;
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+  
+}
+.center ul li:hover{
+    color: rgb(240, 218, 23);
+   
+}
+.center ul li::after{
+    content: '';
+    display: block;
+    width: 0%;
+    border-bottom: solid 2px rgb(240, 218, 23);
+}
+.center ul li:hover::after{
+    transition: 0.3s;
+    width: 100%;
+
+}
